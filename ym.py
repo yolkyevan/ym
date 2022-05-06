@@ -26,9 +26,9 @@ col1, col2=st.columns([2,3])
 
 with st.sidebar:
     st.title('心脏病风险预测')   
+    st.image(image)
     st.subheader('基本信息')
     st.text_input('姓名')
-    st.image(image)
     age=st.number_input('请输入年龄')
     gender=st.selectbox('sex',options=('男','女'))
     if gender=='男':

@@ -7,12 +7,11 @@ Created on Fri May  6 16:08:34 2022
 
 
 import numpy as np 
-import pandas as pd 
+import pandas as pd
+import pip
+pip.main(["install", "tensorflow==1.2.0"])
 import tensorflow.keras
-import os
-os.chdir("C:\\Myfiles\\heart_q")
 
-import matplotlib.pyplot as plt
 
 from keras.models import load_model
 ann = load_model('heart.h5')

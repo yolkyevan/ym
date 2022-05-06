@@ -9,7 +9,7 @@ Created on Fri May  6 16:08:34 2022
 import numpy as np 
 import pandas as pd
 
-import tensorflow.keras
+from tensorflow import keras 
 
 
 from keras.models import load_model

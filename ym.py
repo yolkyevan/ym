@@ -9,10 +9,10 @@ Created on Fri May  6 16:08:34 2022
 import numpy as np 
 import pandas as pd
 
-from tensorflow import keras 
 
 
-from keras.models import load_model
+from tensorflow.keras.models import load_model
+
 ann = load_model('heart.h5')
 
 

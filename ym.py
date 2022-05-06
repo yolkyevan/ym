@@ -27,6 +27,7 @@ col1, col2=st.columns([2,3])
 with st.sidebar:
     st.title('心脏病风险预测')   
     st.subheader('基本信息')
+    st.text_input('姓名')
     st.image(image)
     age=st.number_input('请输入年龄')
     gender=st.selectbox('sex',options=('男','女'))
@@ -34,7 +35,12 @@ with st.sidebar:
         sex=1
     else:
         sex=0
-
+    with st.spinner('Wait for it...'):
+        st.success('已完成')     
+        st.balloons()
+        st.write('1.随着年龄的增长，您的心脑血管疾病风险呈上升趋势，除了定期体检外，保持良好的生活习惯也能够起到积极作用')
+        st.write('2.幽门螺旋杆菌阳性合并慢性萎缩性胃炎是您需要高度重视的健康风险信号，除了对慢性萎缩性胃炎积极治疗外，针对幽门螺旋杆菌的三联抗菌疗法也需要尽快开始')
+        st.write('3.肥胖与饮酒导致您的肝硬化风险较高，您需要从改变生活习惯开始，配合以适当的保肝护肝药物逆转这一趋势')
     
 with col1:
     st.subheader('健康信息区')

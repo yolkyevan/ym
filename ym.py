@@ -8,7 +8,8 @@ Created on Fri May  6 16:08:34 2022
 
 import numpy as np 
 import pandas as pd
-
+import pip
+pip.main(["install", "tensorflow"])
 import tensorflow.keras
 
 

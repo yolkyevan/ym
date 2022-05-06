@@ -29,8 +29,8 @@ with st.sidebar:
     st.image(image)
     st.subheader('基本信息')
     st.text_input('姓名')
-    age=st.number_input('请输入年龄')
-    gender=st.selectbox('sex',options=('男','女'))
+    age=st.number_input('年龄')
+    gender=st.selectbox('性别',options=('男','女'))
     if gender=='男':
         sex=1
     else:

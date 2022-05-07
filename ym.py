@@ -41,7 +41,7 @@ with col1:
     st.subheader('健康信息区')
     cp=st.selectbox('是否胸痛',options=(0,1,2,3))
     trestbps=st.number_input('静息血压')
-    chol=st.number_input('insert chol')
+    chol=st.number_input('血脂')
     fb=st.selectbox('血糖值是否大于120mg/dl',options=('是','否'))
     if fb=='是':
         fbs=1
@@ -49,21 +49,20 @@ with col1:
         fbs=0
 with col1:   
     restecg=st.selectbox('静息心电图结果',options=(0,1))
-    
-    thalach=st.number_input('Insert thalach')
-    exang=st.selectbox('exang',options=(0,1))
+    thalach=st.number_input('血糖值')
     
 with col1:
     oldpeak=st.number_input('运动后ST段降低')
     slope=st.selectbox('峰值运动时ST段坡度',options=(0,1,2))
-    ca=st.selectbox('ca',options=(0,1))
-    tha=st.selectbox('thal',options=('正常','可逆损伤','不可逆损伤'))
+    exang=st.selectbox('身体或器官长期疼痛',options=(0,1))
+    ca=st.selectbox('肿瘤标志物',options=(0,1))
+    tha=st.selectbox('影像结果',options=('正常','可逆损伤','不可逆损伤'))
     if tha=='正常':
-        thal=1
+        影像结果=1
     elif tha=='可逆损伤':
-        thal=2
+        影像结果=2
     else:
-        thal=3
+        影像结果=3
 
 
 
